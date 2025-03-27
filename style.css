@@ -101,3 +101,64 @@ ul {
   margin-top: 0.5rem;
   color: #ccc;
 }
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Floating musical notes */
+.floating-notes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.note {
+  position: absolute;
+  font-size: 1.5rem;
+  color: gold;
+  animation: floatUp 8s infinite;
+  opacity: 0.6;
+}
+
+.note:nth-child(1) { left: 20%; animation-delay: 0s; }
+.note:nth-child(2) { left: 40%; animation-delay: 2s; }
+.note:nth-child(3) { left: 60%; animation-delay: 4s; }
+.note:nth-child(4) { left: 80%; animation-delay: 6s; }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Button hover animation */
+.cta-button {
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #ffcc00;
+  color: #000;
+}
