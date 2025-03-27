@@ -2,96 +2,67 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
   color: #222;
 }
-.top-header {
+header {
+  background: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.nav-logo {
+  height: 40px;
+  vertical-align: middle;
+}
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.logo {
-  height: 50px;
-}
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
 }
-nav ul li a {
+.nav-links li a {
+  color: #004085;
   text-decoration: none;
-  color: #333;
   font-weight: bold;
 }
-.welcome {
+.hero {
   text-align: center;
   padding: 4rem 2rem;
   background: #e1ecf7;
 }
-.welcome h1 {
-  font-size: 2.8rem;
+.hero h1 {
+  font-size: 3rem;
   color: #004085;
 }
-.cta-line {
-  font-style: italic;
+.highlight {
   margin-top: 1rem;
-}
-.cta-button {
-  display: inline-block;
-  margin-top: 1.5rem;
-  background: #004085;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.classes {
-  background: #fff;
-  padding: 3rem 2rem;
-}
-.offer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-.offer-grid div {
-  text-align: center;
-  background: #f0f0f0;
-  padding: 1rem;
-  border-radius: 8px;
-}
-.offer-grid i {
-  font-size: 2rem;
+  font-style: italic;
   color: #004085;
 }
-.about, .testimonials, .contact {
-  padding: 3rem 2rem;
-}
-blockquote {
-  margin: 1.5rem auto;
-  font-style: italic;
-  max-width: 600px;
-  border-left: 5px solid #ccc;
-  padding-left: 1rem;
-}
-.social-icons {
+.icons a {
   font-size: 1.8rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-.social-icons a {
   color: #004085;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+.icons a:hover {
+  color: #1e90ff;
+}
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+ul {
+  padding-left: 1.5rem;
 }
 footer {
   background: #e9ecef;
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
-  color: #444;
+  color: #555;
 }
